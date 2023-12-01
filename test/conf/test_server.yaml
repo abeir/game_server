@@ -1,0 +1,25 @@
+server:
+  listen: "0.0.0.0"
+  port: 9000
+
+database:
+  uri: "abeir:ljp1549266@tcp(8.141.6.123:3306)/game_server_test?charset=utf8mb4&parseTime=True&loc=Local"
+  max_lifetime: 60m
+  max_idle_time: 15m
+  max_idle_conn: 10
+  max_open_conn: 50
+
+logger:
+  level: "debug"
+  output:
+    - "console"
+    - "file"
+  console:
+    date_format: "2006-01-02 15:04:05.000"
+  file:
+    date_format: "2006-01-02 15:04:05.000"
+    filename: "game_server_test.log"
+    max_size: 10
+    max_count: 10
+    keep_days: 30
+    compress: true

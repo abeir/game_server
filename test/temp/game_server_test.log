@@ -1,0 +1,4 @@
+2023-11-30 16:46:14.256 - [DEBUG] - D:/workspace/golang/game_server/test/testcase/Gorm_test.go:30 - [21.095ms] [rows:0] drop table if exists test_gorm_table
+2023-11-30 16:46:14.297 - [DEBUG] - D:/workspace/golang/game_server/test/testcase/Gorm_test.go:35 - [35.898ms] [rows:0] create table test_gorm_table(id integer primary key auto_increment, name varchar(200), create_at datetime)
+2023-11-30 16:46:14.309 - [DEBUG] - D:/workspace/golang/game_server/test/testcase/Gorm_test.go:41 - [12.101ms] [rows:1] SELECT count(*) FROM `test_gorm_table`
+2023-11-30 16:46:14.310 - [INFO] - test logger message
